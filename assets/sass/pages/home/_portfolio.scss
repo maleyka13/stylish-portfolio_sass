@@ -1,0 +1,63 @@
+#portfolio {
+  .container {
+    .portfolio-container {
+      @include center;
+      padding: 100px 0;
+
+      h5 {
+        color: $yellowColor;
+      }
+
+      h2 {
+        font-size: 42px;
+        color: $lightBlack;
+      }
+      .card-box {
+        margin-top: 50px;
+
+        display: grid;
+        grid-template-columns: auto auto;
+
+        .card {
+          width: 100%;
+          height: 350px;
+          transition: 0.5s;
+          @include center;
+          justify-content: flex-end;
+          padding: 0 50px 50px ;
+          .card-hover {
+            color: white !important;
+            h5 {
+              font-size: 15px;
+            color: white;
+            margin-bottom: 10px;
+            }
+          }
+          &:hover {
+            transform: scale(0.8);
+          }
+        }
+        .card2 {
+          background-image: url("../img/portfolio-2.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .card3 {
+          background-image: url("../img/portfolio-3.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .card1 {
+          background-image: url("../img/portfolio-4.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        .card4 {
+          background-image: url("../img/portfolio-1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

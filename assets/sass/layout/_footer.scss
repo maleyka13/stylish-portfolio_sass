@@ -1,0 +1,30 @@
+footer {
+  height: 30vh;
+  width: 100%;
+  .container {
+    .footer-content {
+      padding: 100px 0;
+      @include center;
+      .contacts {
+        display: flex;
+        gap: 20px;
+        .face {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $blueColor;
+          color: white;
+          font-size: 28px;
+        }
+      }
+      p {
+        margin-top: 60px;
+        color: #6c757d;
+        font-size: 18px;
+      }
+    }
+  }
+}

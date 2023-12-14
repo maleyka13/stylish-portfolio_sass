@@ -1,0 +1,54 @@
+#services {
+  height: 65vh;
+  width: 100%;
+  background-color: $blueColor;
+  .container {
+    .services-container {
+      @include center;
+      padding: 100px 0;
+      h5 {
+        text-transform: uppercase;
+        color: $yellowColor;
+      }
+      h2 {
+        color: white;
+        font-size: 36px;
+        line-height: 1.2;
+      }
+      .card-box {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 50px;
+        margin-top: 70px;
+        .card {
+          @include center;
+          gap: 15px;
+          .icon-box {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: white;
+            @include center;
+            i {
+                font-size: 30px;
+                color: $blueColor;
+            }
+          }
+          .card-title {
+            h5{
+                color: white;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+          }
+          .card-text {
+            p{
+                color:rgba(255,255,255, 0.7);
+                font-style: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

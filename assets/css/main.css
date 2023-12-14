@@ -1,0 +1,359 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("../img/bg-masthead.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+header .container .header-container nav {
+  position: relative;
+}
+header .container .header-container nav .bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+}
+header .container .header-container nav .bar i {
+  font-size: 16px;
+}
+header .container .header-container .header-content {
+  padding: 250px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  color: #212529;
+}
+header .container .header-container .header-content h1 {
+  font-size: 70px;
+}
+header .container .header-container .header-content p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+header .container .header-container .header-content .header-btn {
+  background-color: #1D809F;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#about {
+  height: 50vh;
+  width: 100%;
+}
+#about .container .about-container {
+  padding: 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#about .container .about-container h4 {
+  font-size: 32px;
+}
+#about .container .about-container p {
+  font-weight: 300;
+}
+#about .container .about-container p a {
+  color: #1D809F;
+  text-decoration: underline;
+}
+#about .container .about-container button {
+  background-color: #212529;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#services {
+  height: 65vh;
+  width: 100%;
+  background-color: #1D809F;
+}
+#services .container .services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+#services .container .services-container h5 {
+  text-transform: uppercase;
+  color: #ecb807;
+}
+#services .container .services-container h2 {
+  color: white;
+  font-size: 36px;
+  line-height: 1.2;
+}
+#services .container .services-container .card-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  margin-top: 70px;
+}
+#services .container .services-container .card-box .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+#services .container .services-container .card-box .card .icon-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#services .container .services-container .card-box .card .icon-box i {
+  font-size: 30px;
+  color: #1D809F;
+}
+#services .container .services-container .card-box .card .card-title h5 {
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+#services .container .services-container .card-box .card .card-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: 15px;
+}
+
+#callout {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/bg-callout.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+#callout .container .call-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#callout .container .call-container h2 {
+  font-size: 40px;
+  width: 350px;
+  text-align: center;
+}
+#callout .container .call-container button {
+  background-color: #1D809F;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#portfolio .container .portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+#portfolio .container .portfolio-container h5 {
+  color: #ecb807;
+}
+#portfolio .container .portfolio-container h2 {
+  font-size: 42px;
+  color: #212529;
+}
+#portfolio .container .portfolio-container .card-box {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#portfolio .container .portfolio-container .card-box .card {
+  width: 100%;
+  height: 350px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 50px 50px;
+}
+#portfolio .container .portfolio-container .card-box .card .card-hover {
+  color: white !important;
+}
+#portfolio .container .portfolio-container .card-box .card .card-hover h5 {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+#portfolio .container .portfolio-container .card-box .card:hover {
+  transform: scale(0.8);
+}
+#portfolio .container .portfolio-container .card-box .card2 {
+  background-image: url("../img/portfolio-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#portfolio .container .portfolio-container .card-box .card3 {
+  background-image: url("../img/portfolio-3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#portfolio .container .portfolio-container .card-box .card1 {
+  background-image: url("../img/portfolio-4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#portfolio .container .portfolio-container .card-box .card4 {
+  background-image: url("../img/portfolio-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  position: relative;
+}
+body .up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+}
+
+#buttons {
+  background-color: #1D809F;
+  height: 45vh;
+  width: 100%;
+  padding: 100px 0;
+}
+#buttons .container .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+#buttons .container .buttons-container h2 {
+  color: white;
+  font-size: 34px;
+}
+#buttons .container .buttons-container .btn {
+  display: flex;
+  gap: 20px;
+}
+#buttons .container .buttons-container .click {
+  background-color: white;
+  color: #212529;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#buttons .container .buttons-container .look {
+  background-color: #212529;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: 60vh;
+}
+#map iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+footer {
+  height: 30vh;
+  width: 100%;
+}
+footer .container .footer-content {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .container .footer-content .contacts {
+  display: flex;
+  gap: 20px;
+}
+footer .container .footer-content .contacts .face {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D809F;
+  color: white;
+  font-size: 28px;
+}
+footer .container .footer-content p {
+  margin-top: 60px;
+  color: #6c757d;
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

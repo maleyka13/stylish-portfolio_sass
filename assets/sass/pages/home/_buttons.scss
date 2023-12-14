@@ -1,0 +1,42 @@
+body {
+  position: relative;
+  .up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+  }
+}
+
+#buttons {
+  background-color: $blueColor;
+  height: 45vh;
+  width: 100%;
+  padding: 100px 0;
+  .container {
+    .buttons-container {
+      @include center;
+      gap: 25px;
+      h2 {
+        color: white;
+        font-size: 34px;
+      }
+      .btn {
+        display: flex;
+        gap: 20px;
+      }
+      .click {
+        @include button(white, $lightBlack);
+      }
+      .look {
+        @include button($lightBlack, white);
+      }
+    }
+  }
+}

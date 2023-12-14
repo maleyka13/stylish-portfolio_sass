@@ -1,0 +1,25 @@
+#about {
+  height: 50vh;
+  width: 100%;
+  .container {
+    .about-container {
+      padding: 150px 0;
+      @include center;
+      gap: 15px;
+      h4 {
+        font-size: 32px;
+      }
+      p {
+        font-weight: 300;
+        a {
+          color: $blueColor;
+          text-decoration: underline;
+        }
+      }
+      button {
+        @include button($lightBlack, white);
+        margin-top: 20px;
+      }
+    }
+  }
+}

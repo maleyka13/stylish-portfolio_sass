@@ -1,0 +1,15 @@
+@mixin center($justify: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+  flex-direction: column;
+}
+@mixin button($bgcolor: white, $color: black) {
+  background-color: $bgcolor;
+  color: $color;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
